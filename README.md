@@ -1,1 +1,1 @@
-Shannon K. English authour website
+Shannon K. English author website
