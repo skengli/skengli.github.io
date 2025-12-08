@@ -218,6 +218,24 @@ h1 {
   background-color: var(--title-background-color);
   margin-top: var(--header-height-margin);
 }
+@media (max-width: 300px){
+  .title-header {
+    letter-spacing: 6px;
+    font-size: 30px;
+  }
+}
+@media (max-width: 270px){
+  .title-header {
+    letter-spacing: 4px;
+    font-size: 27px;
+  }
+}
+@media (max-width: 250px){
+  .title-header {
+    letter-spacing: 4px;
+    font-size: 25px;
+  }
+}
 
 .author-bio {
   display: grid;
