@@ -6,12 +6,16 @@
   --navbar-text-color-focus: #57686c;
 
   --main-text-color: rgba(255, 255, 255, 0.87);
+  --new-release-text-color: #F26C51;
+
+  --new-release-background-color: #0e7668;
+
   --page-background-color: #084f46;
   --footer-background-color: #084f46;
 
   --title-background-color: #023a3e;
   
-  --header-height-margin: 4em;
+  --header-height-margin: 6em;
   --book-item-background-color: #022524;
 
   --box-link-url-color: white;
@@ -216,7 +220,8 @@ h1 {
   font-size: 30px;
   position: relative;
   background-color: var(--title-background-color);
-  margin-top: var(--header-height-margin);
+  padding-top: 3em;
+  padding-bottom: 1em;
 }
 @media (max-width: 300px){
   .title-header {
@@ -235,6 +240,11 @@ h1 {
     letter-spacing: 4px;
     font-size: 25px;
   }
+}
+
+.title-header h1 {
+  margin: 0px;
+  background-color: var(--new-release-background-color);
 }
 
 .author-bio {
@@ -262,7 +272,7 @@ h1 {
 }
 
 #author-bio-subheader {
-  font-size: 50px;
+  font-size: 30px;
 }
 
 .author-bio-text {
@@ -274,12 +284,82 @@ h1 {
   align-self: center;
   font-size: 20px;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: left;
 }
 @media (max-width: 780px) {
   .author-bio-text {
     width: 80%;
     padding: 5px;
   }
+}
+
+.new-release-section {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  position: relative;
+  scroll-margin-top: var(--header-height-margin);
+  background-color: var(--new-release-background-color);
+  justify-content: center;
+  align-items: center;
+  direction: rtl;
+}
+@media (max-width: 780px) {
+  .new-release-section {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+}
+
+.new-release-image {
+  width: 60%;
+  height: 75%;
+  object-fit: cover;
+}
+@media (max-width: 780px) {
+  .new-release-image {
+    margin-left: 0;
+  }
+}
+
+.new-release-text {
+  margin: 1em;
+  width: 90%;
+  border-radius: 25px;
+  padding: 20px;
+  justify-self: center;
+  align-self: center;
+  font-size: 15px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-align: center;
+  direction: ltr;
+}
+@media (max-width: 780px) {
+  .new-release-text {
+    width: 80%;
+    padding: 5px;
+  }
+}
+
+#new-release-subheader {
+  font-size: 30px;
+  margin: 0px;
+}
+
+.new-release-book-title{
+  color: var(--new-release-text-color);
+  font-size: 23px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.new-release-subtitles p{
+  padding: 0px;
+  margin: 0px;
+}
+
+.new-release-blurb{
+  text-align: left;
+  padding: 0px;
 }
 
 .books-table-section {
